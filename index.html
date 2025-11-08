@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>人员详情</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        /* 顶部固定导航（两个按钮） */
+        .top-nav {
+            position: fixed;       /* 固定在顶部 */
+            top: 0; left: 0; 
+            width: 100%;
+            display: flex;
+            background: #fff;
+            border-bottom: 1px solid #ebebeb;
+            font-size: 18px; 
+            font-weight: bold; 
+            margin-bottom: 8px;
+        }
+        .top-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .top-nav a.active {
+            background: #e6f3ff;   /* 模拟“选中”背景色 */
+        }
+
+        /* 内容区域（避开顶部和底部按钮） */
+        .content {
+            margin-top: 44px;      /* 顶部导航高度 */
+            margin-bottom: 50px;   /* 底部按钮高度 */
+            padding: 15px;
+            background-color: #fff;
+
+        }
+        .user-header {
+            background: #dce4ec;   /* 头部浅蓝色背景 */
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+        .user-name {
+            font-size: 18px; 
+            font-weight: bold; 
+            margin-bottom: 8px;
+        }
+        .cert-number {
+            font-size: 14px; 
+            color: #666;
+        }
+
+        /* 信息项样式 */
+        .info-item {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .info-item label {
+            display: block;
+            font-size: 13px; 
+            color: #999; 
+            margin-bottom: 6px;
+        }
+        .info-item span {
+            font-size: 14px; 
+            color: #333;
+        }
+        .info-item:not(:last-child) {
+            border-bottom: 1px solid #ebebeb; /* 灰色横线 */
+        }
+
+        /* 底部固定按钮（查看电子证照） */
+        .bottom-btn {
+            position: fixed;       /* 固定在底部 */
+            bottom: 0; left: 0; 
+            width: 100%;
+            padding: 15px;
+            background: #fff;
+            border-top: 1px solid #ebebeb;
+        }
+        .bottom-btn a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #4782bd;   /* 蓝色按钮 */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航（固定） -->
+    <div class="top-nav">
+        <a href="1/人员详情.html" class="active">人员详情</a>
+        <a href="1/考勤信息.html">考勤信息</a>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <div class="user-header">
+            <div class="user-name">周国玉</div>
+            <div class="cert-number">证书编号：渝A992025006224</div>
+        </div>
+
+        <div class="info-item">
+            <label>操作类别</label>
+            <span>经省级以上人民政府建设主管部门认定的其他工种类别（有限空间作业人员）</span>
+        </div>
+
+        <div class="info-item">
+            <label>身份证件类型</label>
+            <span>公民身份号码</span>
+        </div>
+
+        <div class="info-item">
+            <label>身份证件号码</label>
+            <span>512************7X</span>
+        </div>
+
+        <div class="info-item">
+            <label>性别</label>
+            <span>男</span>
+        </div>
+
+        <div class="info-item">
+            <label>出生日期</label>
+            <span>1969-03-26</span>
+        </div>
+
+        <div class="info-item">
+            <label>证书状态</label>
+            <span>有效</span>
+        </div>
+
+        <div class="info-item">
+            <label>发证机关</label>
+            <span>重庆市住房和城乡建设委员会</span>
+        </div>
+
+        <div class="info-item">
+            <label>初次领证日期</label>
+            <span>2025-06-01</span>
+        </div>
+
+        <div class="info-item">
+            <label>发证日期</label>
+            <span>2025-06-01</span>
+        </div>
+
+        <div class="info-item">
+            <label>有效期起始日期</label>
+            <span>2025-06-01</span>
+        </div>
+
+        <div class="info-item">
+            <label>有效期结束日期</label>
+            <span>2027-05-31</span>
+        </div>
+    </div>
+
+    <!-- 底部固定按钮 -->
+    <div class="bottom-btn">
+        <a href="https://www.sadafgdffasdasd.com" target="_blank">查看电子证照</a>
+    </div>
+</body>
+</html>
